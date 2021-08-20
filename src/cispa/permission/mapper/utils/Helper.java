@@ -26,7 +26,7 @@ public class Helper {
 	public static void runScript(String serviceMappingPath, String jimpleDir) {
 		Process process = null;
 		try {
-			process = Runtime.getRuntime().exec(new String[] { "/home/abdallah/eclipse-workspace/PermissionMapping/external/parser.py", serviceMappingPath, jimpleDir });
+			process = Runtime.getRuntime().exec(new String[] { "./external/parser.py", serviceMappingPath, jimpleDir });
 		} catch (Exception e) {
 			e.printStackTrace();
 			return;
